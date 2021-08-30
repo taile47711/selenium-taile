@@ -19,6 +19,6 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        DriverHelper.quit();
+//        DriverHelper.quit();
     }
 }

@@ -33,9 +33,9 @@ public class BookTicketTest extends BaseTest {
     public void tc003_BookTicketWithValidData() {
         bookTicketPage.clickBookTicketTab();
         loginPage.login(Constant.USERNAME, Constant.PASSWORD);
-        bookTicketPage.bookTicket("9/9/2021", "Sài Gòn", "Phan Thiết", "Hard bed", "1");
+        bookTicketPage.bookTicket("9/9/2021", "Đà Nẵng", "Huế", "Hard bed", "1");
         String actual = bookTicketPage.getSuccessMsg();
-        Assert.assertEquals(actual, successMessage, "Error message is not displayed as expected");
+        Assert.assertEquals(actual, successMessage, "message is not displayed as expected");
     }
 
     @Test(description = "book ticket with default data")

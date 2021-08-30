@@ -3,7 +3,6 @@ package helpers;
 import com.github.javafaker.Faker;
 import org.apache.commons.lang3.RandomStringUtils;
 
-import java.util.Random;
 
 public class DataHelper {
     private static final Faker faker = new Faker();
